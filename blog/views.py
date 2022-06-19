@@ -11,4 +11,4 @@ def specific(request):
     return HttpResponse(list1)
 
 def article(request, article_id):
-    return HttpResponse(article_id)
+    return render(request, 'blog/index.html', {'article_id': article_id})
