@@ -9,6 +9,26 @@
     <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
 </head>
 <body>
-    <h1>This is django app</h1>
+    <div style="margin:10px auto; width:90%">
+        <h3 style="text-align:center">Employees management system</h3>
+    </div>
+    <table style="width:100%; text-align:center; border:1px solid black">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Job</th>
+            <th>Salary</th>
+        </tr>
+     {% for employee in employees %}
+     <tr>
+        <th>{{ employee.name }}</th>
+        <th>{{ employee.email }}</th>
+        <th>{{ employee.job }}</th>
+        <th>{{ employee.salary }}</th>
+        <th><a class="edit-button" href="{% url 'editEmployeeForm' employee.id %}">Edit</a></th>
+        <th><a class="delete-button" href="{% url 'deleteEmployee' employee.id %}">Delete</a></th>
+     </tr>
+     {% endfor %}
+    </table>
 </body>
 </html>

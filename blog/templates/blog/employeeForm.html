@@ -12,24 +12,24 @@
 
     <form method="POST" action="{% url 'createEmployee'  %}">
         {% csrf_token %}
-        <h1>Create employee</h1>
-        <div style="margin:10px auto; width: 50%">
+        <h1 style="text-align:center">Create employee</h1>
+        <div style="margin:10px auto; width: 50%;  text-align:center">
             <label>Name</label>
             <input type="text" name="name" placeholder="Insert employee name"/>
         </div>
-        <div style="margin:10px auto; width: 50%">
+        <div style="margin:10px auto; width: 50%;  text-align:center">
             <label>Email</label>
             <input type="email" name="email" placeholder="Insert employee email"/>
         </div>
-        <div style="margin:10px auto; width: 50%">
+        <div style="margin:10px auto; width: 50%;  text-align:center">
             <label>Job title</label>
             <input type="text" name="job" placeholder="Insert employee job title"/>
         </div>
-        <div style="margin:10px auto; width: 50%">
+        <div style="margin:10px auto; width: 50%;  text-align:center">
             <label>Salary</label>
             <input type="number" name="salary" placeholder="Insert employee salary"/>
         </div>
-        <div style="margin:10px auto; width: 50%">
+        <div style="margin:10px auto; width: 50%;  text-align:center">
             <input type="submit" value="create employee" style="background-color: blue; color: white;" />
         </div>
     </form>

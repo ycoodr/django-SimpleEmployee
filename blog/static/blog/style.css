@@ -2,3 +2,27 @@ h1 {
     background-color: brown;
     color: white;
 }
+
+body {
+    background-color: brown;
+    color: white;
+}
+
+td {
+    padding: 10px; 
+    border-bottom: 1px solid black;
+}
+
+.edit-button {
+    color:#ffffff;
+    background-color: #224933;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.delete-button {
+    color: #ffffff;
+    background-color: red;
+    text-decoration: none;
+    padding: 5px;
+}
